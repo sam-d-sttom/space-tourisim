@@ -12,6 +12,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 header{
@@ -152,6 +153,7 @@ h1 span{
     letter-spacing: 2.7px;
     color: #D0D6F9;
     position: relative;
+    cursor: pointer;
 }
 
 .minorNavList::after{
@@ -180,21 +182,40 @@ h1 span{
 }
 
 .planet{
-    background: url('../assets/destination/image-moon.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 445px;
     aspect-ratio: 1;
     position: absolute;
-    right: 53.125vw;
     top: 343px;
+    right: 150vw;
+    transition: all 1.5s ease;
 }
 
-#innerSection{
+.moon{
+    background: url('../assets/destination/image-moon.png');
+    right: 53.125vw;
+}
+.mars{
+    background: url('../assets/destination/image-mars.png');
+}
+.europa{
+    background: url('../assets/destination/image-europa.png');
+}
+.titan{
+    background: url('../assets/destination/image-titan.png');
+}
+
+.innerSection{
     position: absolute;
     color: #fff;
     width: 445px;
     top: 381px;
+    left: 150vw;
+    transition: all 1.5s ease;
+}
+
+.moonInnerSection{
     left: 57.778vw;
 }
 
