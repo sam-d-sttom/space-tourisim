@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+body{
+    background: url('../assets/destination/background-destination-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 96px;
+    margin-top: 40px;
+    margin-left: 3.82%;
+    width: 96.18%;
+}
+
+#logo{
+    background: url('../assets/shared/logo.svg');
+    width: 48px; 
+    height: 48px;
+}
+
+.accessibility{
+    visibility: hidden;
+}
+
+.navBtn{
+    display: none;
+}
+
+#mainNav{
+    padding:  39px 165px 38px 123px;
+    width: 59.93%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(30.5485px);
+}
+
+#navigations{
+    display: flex;
+    justify-content: space-between;
+    width: 542px;
+    height: 19px;
+}
+
+#navigations li{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.mainNavList::after{
+    content: '';
+	background: #fff;
+	width: 0%;
+	height: 2px;
+	position: absolute;
+	bottom: -200%;
+	left: 0;
+    transition: all .5s ease;
+}
+
+.mainNavList:hover::after{
+	width: 100%;
+}
+
+#active::after{
+    content: '';
+	background: #fff;
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	bottom: -200%;
+	left: 0;
+}
+
+
+.mainNavList span{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-style: normal;
+    margin-right: 11px;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #FFFFFF;
+}
+
+a{
+    color: #fff;
+}
+
+h1{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.75em;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 76px 0 0 166.5px;
+}
+
+h1 span{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    margin-right: 28px;
+}
+
+#minorNav{
+    position: absolute;
+    top: 310px;
+    right: 22.56vw;
+    Width: 285.5px;
+    Height: 34px;
+}
+
+#minorNav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.minorNavList{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #D0D6F9;
+    position: relative;
+}
+
+.minorNavList::after{
+    content: '';
+	background: #fff;
+	width: 0%;
+	height: 2px;
+	position: absolute;
+	bottom: -50%;
+	left: 0;
+    transition: all .5s ease;
+}
+
+.minorNavList:hover::after{
+	width: 100%;
+}
+
+.minorNavActive::after{
+    content: '';
+    background: #fff;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+}
+
+.planet{
+    background: url('../assets/destination/image-moon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 445px;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 15.98vw;
+    top: 343px;
+}
+
+#innerSection{
+    position: absolute;
+    color: #fff;
+    width: 445px;
+    top: 381px;
+    right: 11.32vw;
+}
+
+h2{
+    font-family: 'Bellefair', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 115px;
+    color: #FFFFFF;
+}
+
+p{
+
+}
