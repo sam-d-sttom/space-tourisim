@@ -118,7 +118,7 @@ h1{
 }
 
 h1 span{
-    font-family: 'Barlow Condensed';
+    font-family: 'Barlow Condensed', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 28px;
@@ -133,7 +133,7 @@ h1 span{
 #minorNav{
     position: absolute;
     top: 310px;
-    right: 22.56vw;
+    left: 57.78vw;
     Width: 285.5px;
     Height: 34px;
 }
@@ -144,7 +144,7 @@ h1 span{
 }
 
 .minorNavList{
-    font-family: 'Barlow Condensed';
+    font-family: 'Barlow Condensed', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -186,7 +186,7 @@ h1 span{
     width: 445px;
     aspect-ratio: 1;
     position: absolute;
-    left: 15.98vw;
+    right: 53.125vw;
     top: 343px;
 }
 
@@ -195,7 +195,7 @@ h1 span{
     color: #fff;
     width: 445px;
     top: 381px;
-    right: 11.32vw;
+    left: 57.778vw;
 }
 
 h2{
@@ -208,5 +208,46 @@ h2{
 }
 
 p{
+    padding-bottom: 54px;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(61, 59, 59);
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125em;
+    line-height: 32px;
+    color: #D0D6F9;
+}
 
+.innerSectionDiv{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+    width: 344px;
+}
+
+.innerSectionDiv > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.innerSectionDivSPanOne{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875em;
+    line-height: 17px;  
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+    color: #D0D6F9;
+}
+
+.innerSectionDivSPanTwo{
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
