@@ -13,5 +13,3 @@ function moveNav(click){
     const clickTarget = click.target.id;
     console.log(clickTarget);
 };
-
-console.log(navBtn);

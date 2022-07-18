@@ -389,5 +389,38 @@ p{
 }
 
 @media(max-width: 415px){
-
+    body{
+        background-image: url('../assets/destination/background-destination-mobile.jpg');
+    }
+    header{
+        height: 43px;
+        margin-top: 24px;
+        justify-content: space-between;
+    }
+    svg{
+        width: 40px; 
+        height: 40px;
+    }
+    #mainNav{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        padding:  33.95px 0 0 32px;
+        right: -100vw;
+        top: 0;
+        height: 100%;
+        width: 65vw;
+        z-index: 10;
+        transition: all .8s ease;
+    }
+    .openBtn{
+        display: block;
+        background: url('../assets/shared/icon-hamburger.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+        margin-right: 24px;
+        width: 24px;
+        height: 21px;
+    }
 }
