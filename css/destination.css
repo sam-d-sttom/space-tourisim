@@ -12,7 +12,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    overflow-x: hidden;
 }
 
 header{
@@ -40,7 +39,7 @@ header{
 }
 
 #mainNav{
-    padding:  39px 165px 38px 123px;
+    text-align: center;
     width: 59.93%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.04);
@@ -48,6 +47,7 @@ header{
 }
 
 #navigations{
+    margin: 39px 19.88% 38px 14.82%;
     display: flex;
     justify-content: space-between;
     width: 542px;
@@ -131,10 +131,48 @@ h1 span{
     margin-right: 28px;
 }
 
-#minorNav{
+
+#mainSection{
+    position: relative;
+    margin: 64px 0 0 0;
+    height: 600px;
+    overflow: hidden;
+}
+
+.planet{
     position: absolute;
-    top: 310px;
-    left: 57.78vw;
+    right: 500%;
+    top: 39px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 445px;
+    height: 445px;
+    transition: all 1s ease;
+    margin-right: 51.81%;
+}
+
+.moon{
+    background: url('../assets/destination/image-moon.png');
+    right: 0;
+}
+.mars{
+    background: url('../assets/destination/image-mars.png');
+}
+.europa{
+    background: url('../assets/destination/image-europa.png');
+}
+.titan{
+    background: url('../assets/destination/image-titan.png');
+} 
+
+.innerSection{
+    position: absolute;
+    left: 57.78%;
+    color: #fff;
+    width: 445px;
+}
+
+#minorNav{
     Width: 285.5px;
     Height: 34px;
 }
@@ -181,43 +219,17 @@ h1 span{
     left: 0;
 }
 
-.planet{
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 445px;
-    aspect-ratio: 1;
+.innerSectionContent{
     position: absolute;
-    top: 343px;
-    right: 150vw;
-    transition: all 1.5s ease;
+    top: 71px;
+    left: 500%;
+    transition: all 1s ease;
 }
 
-.moon{
-    background: url('../assets/destination/image-moon.png');
-    right: 53.125vw;
-}
-.mars{
-    background: url('../assets/destination/image-mars.png');
-}
-.europa{
-    background: url('../assets/destination/image-europa.png');
-}
-.titan{
-    background: url('../assets/destination/image-titan.png');
+.moonInnerSectionContent{
+    left: 0%;
 }
 
-.innerSection{
-    position: absolute;
-    color: #fff;
-    width: 445px;
-    top: 381px;
-    left: 150vw;
-    transition: all 1.5s ease;
-}
-
-.moonInnerSection{
-    left: 57.778vw;
-}
 
 h2{
     font-family: 'Bellefair', serif;
@@ -271,4 +283,111 @@ p{
     line-height: 32px;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+@media(max-width: 1144px){
+    #mainNav{
+        width: 80.93%;
+    }
+    .innerSection{
+        width: 340px;
+    }
+    .planet{
+        background-repeat: no-repeat;
+    background-size: cover;
+        width: 340px;
+        height: 340px;
+    }
+}
+
+@media(max-width: 820px){
+    body{
+        background-image: url('../assets/destination/background-destination-tablet.jpg');
+    }
+    header{
+        margin-top: 0;
+        margin-left: 5.08%;
+        width: 94.92%;
+    }
+    #mainNav{
+        width: 64.72%;
+    }
+    #navigations{
+        margin: 39px 19.88% 38px 14.82%;
+        width: 356px;
+    }
+    ul{
+        width: 356px;
+    }
+    .mainNavList span{
+        display: none;
+    }
+    .mainNavList{
+        font-size: 0.875em;
+        line-height: 17px;
+    }
+    #mainSection{
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+    }
+    h1{
+        margin: 76px 0 0 38.5px;
+    }
+    .planet{
+        top: 0px;
+        width: 300px;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 30.47% 0 30.47%;
+    }
+    .moon{
+        content: url('../assets/destination/image-moon.png');
+        right: 0;
+    }
+    #minorNav{
+        transform: translate(-10%);
+    }
+    .innerSection{
+        left: 15%;
+        top: 353px;
+        width: 69.87%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .innerSectionContent{
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 690px){
+    #mainNav{
+        width: 87.72%;
+    }
+    #navigations{
+        margin: 39px 19.88% 38px 4.82%;
+        width: 356px;
+    }
+    .planet{
+        margin: 0 20.47% 0 30.47%;
+    }
+}
+
+@media(max-width: 452px){
+    #navigations{
+        width: 300px;
+    }
+    .planet{
+        margin: 0 15.47% 0 30.47%;
+    }
+}
+
+@media(max-width: 415px){
+
 }

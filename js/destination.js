@@ -1,6 +1,7 @@
 const minorNavOptions = document.querySelectorAll('.minorNavList')
 const planets = document.querySelectorAll('.planet')
-const innerSections = document.querySelectorAll('.innerSection')
+const innerSectionsContent = document.querySelectorAll('.innerSectionContent')
+const windowWidth = window.innerWidth
 
 //for selected minor navigation option
 minorNavOptions.forEach(Option => Option.addEventListener('click', activate))
@@ -8,12 +9,11 @@ minorNavOptions.forEach(Option => Option.addEventListener('click', activate))
 function activate(click){
     const clickedText = click.target.innerText.toLowerCase()
 
+    //for the after effects on the minor navigations when active
     minorNavOptions.forEach(Option => Option.classList.remove('minorNavActive'))
     click.target.classList.add('minorNavActive')
 
-    planets.forEach(planet => planet.classList.contains(clickedText) ? planet.style.right = '53.125vw' : planet.style.right = '150vw')
-    innerSections.forEach(innerSection => innerSection.classList.contains(`${clickedText}InnerSection`) ? innerSection.style.left = '57.778vw' : innerSection.style.left = '150vw')
-    
-
+    //movement of the planetary bodies and their respective articles when the respective minor navigations is clicked
+        planets.forEach(planet => planet.classList.contains(clickedText) ? planet.style.right = '0%' : planet.style.right = '500%')
+        innerSectionsContent.forEach(innerSections => innerSections.classList.contains(`${clickedText}InnerSectionContent`) ? innerSections.style.left = '0%' : innerSections.style.left = '500%')
 }
-
