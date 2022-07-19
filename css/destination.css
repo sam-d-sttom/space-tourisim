@@ -422,5 +422,46 @@ p{
         margin-right: 24px;
         width: 24px;
         height: 21px;
+    }.closeBtn{
+        display: block;
+        background: url('../assets/shared/icon-close.svg');
+        align-self: end;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+        margin: 0 26.45px 64.95px 0;
+        width: 19.09px;
+        height: 19.09px;
+    }
+    #navigations{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        height: 150px;
+    }
+    .mainNavList{
+        font-size: 1em;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        color:rgba(255, 255, 255, 0.85);
+    }
+    .mainNavList span{
+        display: inline;
+        font-size: 1em;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+    }
+    #active::after, .mainNavList::after{
+        display: none;
+    }
+    #active::before{
+        content: '';
+        background: #fff;
+        height: 120%;
+        width: 3px;
+        position: absolute;
+        right: -76px;
     }
 }
