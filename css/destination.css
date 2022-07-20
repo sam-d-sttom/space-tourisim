@@ -486,7 +486,7 @@ p{
         font-size: 1em;
         line-height: 19px;
         letter-spacing: 2.7px;
-        transform: translate(8%);
+        margin-left: 72.5px;
     }
     h1 > span{
         font-size: 1em;
