@@ -265,6 +265,9 @@ p{
         width: 31.51vw;
         transform: translate(-60%);
     }
+    #explore:hover::after{
+        display: none;
+    }
 }
 
 @media(max-width: 600px){
@@ -381,7 +384,7 @@ p{
         line-height: 25px;
     }
     #explore{
-        height: 40vw;
+        height: 40vw; 
         width: 40vw;
         transform: translate(-42.5%);
     }
@@ -389,5 +392,8 @@ p{
         font-size: 1.25em;
         line-height: 23px;
         letter-spacing: 1.25px;
+    }
+    #explore:hover::after{
+        display: none;
     }
 }
