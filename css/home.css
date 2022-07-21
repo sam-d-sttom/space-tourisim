@@ -12,7 +12,6 @@ body{
     background: url('../assets/home/background-home-desktop.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 header{
