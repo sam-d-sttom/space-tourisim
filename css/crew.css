@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+body{
+    background: url('../assets/crew/background-crew-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 96px;
+    margin-top: 40px;
+    margin-left: 3.82%;
+    width: 96.18%;
+}
+
+#logo{
+    background: url('../assets/shared/logo.svg');
+    width: 48px; 
+    height: 48px;
+}
+
+.accessibility{
+    visibility: hidden;
+}
+
+.navBtn{
+    display: none;
+}
+
+#mainNav{
+    text-align: center;
+    width: 59.93%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(30.5485px);
+}
+
+#navigations{
+    margin: 39px 19.88% 38px 14.82%;
+    display: flex;
+    justify-content: space-between;
+    width: 542px;
+    height: 19px;
+}
+
+#navigations li{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.mainNavList::after{
+    content: '';
+	background: #fff;
+	width: 0%;
+	height: 2px;
+	position: absolute;
+	bottom: -200%;
+	left: 0;
+    transition: all .5s ease;
+}
+
+.mainNavList:hover::after{
+	width: 100%;
+}
+
+#active::after{
+    content: '';
+	background: #fff;
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	bottom: -200%;
+	left: 0;
+}
+
+
+.mainNavList span{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-style: normal;
+    margin-right: 11px;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #FFFFFF;
+}
+
+a{
+    color: #fff;
+}
+
+h1{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.75em;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: absolute;
+    top: 212px;
+    left: 166.5px;
+}
+
+h1 span{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    margin-right: 28px;
+}
+
+section{
+    display: flex;
+    padding-left: 11.49%;
+    margin-top: 76px;
+}
+
+#scrollContainer{
+    width: 614px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    transition: all .5s;
+}
+
+#scrollContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.sectionContent{
+    display: flex;
+    margin-top: 188px;
+    width: 2456px;
+}
+
+.contents{
+    scroll-snap-align: end;
+    width: 25%;
+}
+
+#role{
+    display: block;
+    font-family: 'Bellefair', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+#name{
+    font-family: 'Bellefair', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+p{
+    width: 444px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #D0D6F9;
+}
+
+#dotDiv{
+    display: flex;
+    width: 132px;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 94px;
+}
+
+.dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.17;
+    cursor: pointer;
+}
+
+.douglasDot{
+    opacity: 1;
+}
+
+#imgDiv{
+    position: relative;
+    height: inherit;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img{
+    position: absolute;
+    left: 150%;
+}
+
+.douglasImg{
+    left: 0;
+}
+
+.control{
+    font-size: 50px;
+    position: absolute;
+    top: 500px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.left{
+    left: 40px;
+}
+
+.right{
+    right: 40px;
+}

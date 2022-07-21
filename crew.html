@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/crew.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <header>
+    <div id="logo"></div>
+
+    <button class="navBtn openBtn" id="working" aria-controls="navigations" aria-expanded="false">
+      <span class="accessibility">Open Menu</span>
+    </button>
+    <div id="closeNavMobile"></div>
+
+    <nav id="mainNav">
+      <button class="navBtn closeBtn" aria-controls="navigations" aria-expanded="true">
+        <span class="accessibility">Close Menu</span>
+      </button>
+      <ul id="navigations">
+        <li class="mainNavList"><a href="index.html"><span aria-hidden="true">00</span>HOME</a></li>
+        <li class="mainNavList"><a href="destination.html"><span aria-hidden="true">01</span>DESTINATION</a></li>
+        <li id="active" class="mainNavList"><a href="#"><span aria-hidden="true">02</span>CREW</a></li>
+        <li class="mainNavList"><a href="#"><span aria-hidden="true">03</span>TECHNOLOGY</a></li>
+      </ul>
+    </nav> 
+  </header>
+
+  
+  <h1><span>02</span>Meet your crew</h1>
+
+  <section>
+    <div>
+      <div id="scrollContainer">
+        <div class="sectionContent">
+          <div class="contents douglasContent">
+            <span id="role">Commander</span>
+            <span id="name">Douglas Hurley</span>
+            <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+              and former NASA astronaut. He launched into space for the third time as 
+              commander of Crew Dragon Demo-2.</p>
+          </div>
+          <div class="contents MarkContent">
+            <span id="role">Mission Specialist</span>
+            <span id="name">Mark Shuttleworth</span>
+            <p>Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
+              the Linux-based Ubuntu operating system. Shuttleworth became the first South 
+              African to travel to space as a space tourist.</p>
+          </div>
+          <div class="contents victorContent">
+            <span id="role">Pilot</span>
+            <span id="name">Victor Glover</span>
+            <p>Pilot on the first operational flight of the SpaceX Crew Dragon to the 
+              International Space Station. Glover is a commander in the U.S. Navy where 
+              he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
+              station systems flight engineer.</p>
+          </div>
+          <div class="contents anoushehContent">
+            <span id="role">Flight Engineer</span>
+            <span id="name">Anousheh Ansari</span>
+            <p>Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
+              Ansari was the fourth self-funded space tourist, the first self-funded woman to 
+              fly to the ISS, and the first Iranian in space.</p>
+          </div>
+        </div>
+      </div>
+      <!-- for the four dots to nave gate the various crew members-->
+      <div id="dotDiv">
+        <div class="dot douglasDot douglas"></div>
+        <div class="dot markDot mark"></div>
+        <div class="dot victorDot victor"></div>
+        <div class="dot anoushehDot anousheh"></div>
+      </div>
+
+    </div>
+    
+    <div id="imgDiv">
+      <img class="img douglasImg" src="assets/crew/image-douglas-hurley.png" alt="an image of Douglas Hurley in a blue NASA cloth rasing up his hand">
+      <img class="img markImg" src="assets/crew/image-mark-shuttleworth.png" alt="an image of Mark Shuttleworth speaking with a microphone">
+      <img class="img victorImg" src="assets/crew/image-victor-glover.png" alt="an image of Victor Glover in a blue NASA cloth">
+      <img class="img anoushehImg" src="assets/crew/image-anousheh-ansari.png" alt="an image of Anousheh Ansari speaking with a microphone">
+    </div>
+  </section>
+
+  <i class="fa fa-angle-left left control " aria-hidden="true"></i>
+  <i class="fa fa-angle-right right control" aria-hidden="true"></i>
+  
+
+  
+ 
+
+  <script src="js/crew.js"></script>
+</body>
+</html>
